@@ -10,8 +10,10 @@ import axios from 'axios'
 
 
 export const FETCHING = 'FETCHING';
+
 export const SUCCESS = 'SUCCESS';
 export const success = SUCCESS;
+
 export const FAILURE = 'FAILURE';
 export const failure = FAILURE
 
@@ -28,37 +30,3 @@ export const fetching = () => dispatch => {
       })
 }
 
-
-
-// export const success = () => newChar => {
-//   console.log('inside Success function')
-//   return {
-//     type: SUCCESS,
-//     payload: newChar
-//   }
-// }
-
-// .then(res => {
-//   this.setState({ smurfs: res.data });
-// })
-
-
-
-// export const failure = () => dispatch => {
-//   console.log('inside failure function')
-//   dispatch({ type: FAILURE });
-//     axios.get(`https://swapi.co/api/people`)
-// }
-
-
-// componentDidMount() {
-//   axios
-//     .get('http://localhost:3333/smurfs')
-//     .then(res => {
-//       this.setState({ smurfs: res.data });
-//     })
-//     .catch(err => {
-//       console.log(err);
-//       this.setState({ error: err });
-//     });
-// }
